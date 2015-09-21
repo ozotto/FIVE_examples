@@ -1,0 +1,151 @@
+/* TimeLine     ------------------- */
+.timeline{
+    background: #ffffff;
+    border: 1px solid #97B0F8;
+}
+
+.timeline .lineAxes{
+    stroke: black;
+}
+
+.zoneTime {
+    fill: #D5DDF6;
+}
+
+.infoZoneTime{
+    fill: wheat;
+}
+
+.zoneTimeLine{
+    cursor:pointer;
+}
+
+.lineActualTime{
+    fill: none;
+    stroke: red;
+    stroke-width: 2;
+    shape-rendering: crispEdges;
+}
+
+.linePositionTime{
+    fill: none;
+    stroke: green;
+    stroke-width: 2;
+    shape-rendering: crispEdges;
+}
+
+.circlePositionTime{
+    fill: green;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.lineAxeX{
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+/* Map          ------------------- */
+.zoneMap{
+    fill: #ffffff;
+    cursor: pointer;
+}
+
+.pathCountry {
+    stroke: black;
+    stroke-width: 0.25px;
+    fill: gray;
+}
+
+.pathCountry.Colombia {
+    stroke: white;
+    stroke-width: 0.25px;
+    fill: green;
+}
+
+.pathState{
+    stroke: black;
+    stroke-width: 0.25px;
+}
+
+.pathCities{
+    fill: black;
+}
+
+.pathItems{
+    /*fill: red;*/
+    stroke: steelblue;
+    fill: white;
+}
+
+.item{
+    cursor: pointer;
+}
+
+.state{
+    cursor: pointer;
+}
+
+div.tooltip {
+    color: #222;
+    background: #fff;
+    padding: .5em;
+    text-shadow: #f5f5f5 0 1px 0;
+    border-radius: 2px;
+    box-shadow: 0px 0px 2px 0px #a6a6a6;
+    opacity: 0.9;
+    position: absolute;
+}
+
+/* Items        ------------------- */
+circle.point{
+    fill: black;
+}
+text {
+    fill: black;
+}
+
+text.nameCity {
+    fill: black;
+    font-size: 1px
+}
+
+
+
+.d3-tip {
+    line-height: 1;
+    font-weight: bold;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.8);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+}
+
+
+
